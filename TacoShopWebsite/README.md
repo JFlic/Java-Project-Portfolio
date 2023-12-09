@@ -1,1 +1,1 @@
-This was a website tutorial that I did in my free time over the summer of 2022 just to keep my Java Script, HTML and CSS skill sharp. I learned and implemented object oriented practices into my code and made sure that the front in we responsive as well as easy to navigate on the web application. 
+This was a website tutorial that I did in my free time over the summer of 2022 just to keep my HTML and CSS skills sharp. I made sure that the front in we responsive as well as easy to navigate on the web application. 
