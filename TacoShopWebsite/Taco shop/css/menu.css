@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HEADER-BGCOLOR: #333;
+    --HEADER-COLOR: whitesmoke;
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-width: 100vh;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+header {
+    background-color: white;
+    color: black;
+}
+
+.header-title-line {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    width: 48;
+    height: 48;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    background-color: var(--HEADER-COLOR);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+}
