@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hangman Game</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-image: linear-gradient(to bottom, lightblue,white);
+            }
+            img{
+                border-radius: 100px;
+            }
+            #wrapper { margin-left: auto ;
+                margin-right: auto ;
+                width: 95%;
+                text-align: center;
+                background-image: linear-gradient(to bottom,blue,white);
+            }
+            header{
+                background-image: linear-gradient(to top, black,blue);
+                color: white;
+                padding: 2.5px;
+            }
+            .endding{
+                visibility:hidden;
+                margin: 0px;
+                padding: 0px;
+            }
+            #guesses{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="wrapper"><header><h1>Hangman</h1></header>
+            <h1 id="hidden word"></h1>
+            <h1 id="enddingText" class="endding">You <span id="result"></span></h1>
+            <button id="enddingButton" class="endding" onclick="Reset()">Play Again</button>
+            <br>
+            <img id="person" width="387px" height="348px">
+            <br>
+            <h3 id="enddingWord" class="endding">The word was: <span id="word"></span></h3>
+            <h3 id="guessBoxText">Guess a Letter</h3>
+            <input id="guessBox" type="text" maxlength="1" title="Guess a letter">
+            <button id="guessBoxButton" onclick="CheckIn()">Check</button>
+            <div id="guesses">
+                <h3 id="GuessHistoryText">Guess History</h3>&nbsp;&nbsp;&nbsp;
+                <p id="guessHistory"></p>
+            </div>
+            <script src="./logic.js"></script>
+        </div>
+
+</body>
+</html>
